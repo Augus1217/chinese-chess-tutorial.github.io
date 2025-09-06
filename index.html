@@ -1,117 +1,118 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>象棋教學 (Chinese Chess Tutorial)</title>
+    <title data-lang="pageTitle">Chinese Chess Tutorial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>象棋教學</h1>
-        <p>歡迎來到象棋教學！這裡是為初學者準備的基本規則介紹。</p>
+        <h1 data-lang="headerTitle"></h1>
+        <p data-lang="welcomeMessage"></p>
 
         <section id="pieces">
-            <h2>棋子走法與吃法</h2>
+            <h2 data-lang="piecesTitle"></h2>
 
             <article>
-                <h3>帥 / 將</h3>
+                <h3 data-lang="generalTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_k.png" alt="帥">
                     <img src="images/b_k.png" alt="將">
                 </div>
-                <p><strong>走法：</strong>在「九宮」內移動，可以上下左右移動一格。</p>
+                <p data-lang="generalMove"></p>
                 <div class="move-image-container">
                     <img src="images/move/帥1.png" alt="將帥走法" class="move-image">
-                    <p class="image-caption">帥將可以在九宮內上下左右移動一格。</p>
+                    <p class="image-caption" data-lang="generalMoveCaption"></p>
                 </div>
-                <p><strong>特殊規則：</strong>帥和將不能在同一條直線上直接碰面，中間必須有棋子阻隔，這被稱為「王不見王」或「飛將」。</p>
-                <p><strong>觀念：</strong>將/帥是遊戲的唯一目標，它的安全是第一要務。雖然移動力很弱，但在殘局時可以「御駕親征」，發揮一定的攻擊力。</p>
+                <p data-lang="generalRule"></p>
+                <p data-lang="generalConcept"></p>
                 <div class="move-image-container">
                     <img src="images/move/帥2.png" alt="御駕親征" class="move-image">
-                    <p class="image-caption">因為帥將不能碰面，所以帥不能往右。</p>
+                    <p class="image-caption" data-lang="generalConceptCaption"></p>
                 </div>
             </article>
 
             <article>
-                <h3>仕 / 士</h3>
+                <h3 data-lang="advisorTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_a.png" alt="仕">
                     <img src="images/b_a.png" alt="士">
                 </div>
-                <p><strong>走法：</strong>在「九宮」內沿斜線走一格。是將/帥的貼身護衛。</p>
+                <p data-lang="advisorMove"></p>
                 <div class="move-image-container">
                     <img src="images/move/仕1.png" alt="仕/士走法" class="move-image">
-                    <p class="image-caption">仕/士在九宮內沿斜線走一格。</p>
+                    <p class="image-caption" data-lang="advisorMoveCaption"></p>
                 </div>
-                <p><strong>觀念：</strong>主要價值在於防守，保護將帥的核心區域。應避免輕易犧牲，否則將帥的防禦會出現嚴重漏洞。</p>
+                <p data-lang="advisorConcept"></p>
                 <div class="move-image-container">
                     <img src="images/move/仕2.png" alt="仕/士觀念" class="move-image">
-                    <p class="image-caption">士的主要任務是保護將帥。雙士環環相扣，組成堅強防禦。</p>
+                    <p class="image-caption" data-lang="advisorConceptCaption"></p>
                 </div>
             </article>
 
             <article>
-                <h3>相 / 象</h3>
+                <h3 data-lang="elephantTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_b.png" alt="相">
                     <img src="images/b_b.png" alt="象">
                 </div>
-                <p><strong>走法：</strong>沿著「田」字對角線移動，一次走兩格，俗稱「飛相 / 象」。</p>
-                <p><strong>特殊規則：</strong>不能過河。如果「田」字中心有棋子（塞象眼），則不能往該方向移動。</p>
-                <p><strong>觀念：</strong>核心的防守子力，與「仕」互相配合，鞏固防線。缺點是移動範圍受限且有「塞象眼」的弱點，容易被對方的兵卒或車炮針對。</p>
+                <p data-lang="elephantMove"></p>
+                <p data-lang="elephantRule"></p>
+                <p data-lang="elephantConcept"></p>
             </article>
 
             <article>
-                <h3>俥 / 車</h3>
+                <h3 data-lang="chariotTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_r.png" alt="俥">
                     <img src="images/b_r.png" alt="車">
                 </div>
-                <p><strong>走法：</strong>沿直線(橫或直)移動，步數不限，只要路徑上沒有其他棋子阻擋。</p>
-                <p><strong>觀念：</strong>象棋中最強的攻擊子力，威力遠大。所謂「一車十子寒」，形容其強大的牽制力。通常是開局、中局、殘局的主力。</p>
+                <p data-lang="chariotMove"></p>
+                <p data-lang="chariotConcept"></p>
             </article>
 
             <article>
-                <h3>傌 / 馬</h3>
+                <h3 data-lang="horseTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_n.png" alt="傌">
                     <img src="images/b_n.png" alt="馬">
                 </div>
-                <p><strong>走法：</strong>沿「日」字對角線移動，即先直一格、再斜一格。</p>
-                <p><strong>特殊規則：</strong>如果前進方向的點有棋子（蹩馬腿），則不能往該方向移動。</p>
-                <p><strong>觀念：</strong>非常靈活的棋子，攻擊範圍廣，能同時威脅多個目標，形成「八面威風」。馬的走位非常關鍵，有所謂「連環馬」的防守陣勢，也有「臥槽馬」、「盤河馬」等經典攻擊定式。殘局時，由於棋子減少，蹩馬腿的情形減少，威力大增。</p>
+                <p data-lang="horseMove"></p>
+                <p data-lang="horseRule"></p>
+                <p data-lang="horseConcept"></p>
             </article>
 
             <article>
-                <h3>炮 / 包</h3>
+                <h3 data-lang="cannonTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_c.png" alt="炮">
                     <img src="images/b_c.png" alt="包">
                 </div>
-                <p><strong>移動：</strong>不吃子時，走法與「車」相同。</p>
-                <p><strong>吃子：</strong>炮是唯一吃法與走法不同的棋子。吃子時必須跳過一個棋子（無論敵我，稱為「炮架」）才能攻擊並吃掉後方的敵方棋子。</p>
-                <p><strong>觀念：</strong>遠距離打擊子力，在開局棋子密集時威脅極大。所謂「當頭炮」，就是開局的核心戰術之一。與馬相反，殘局時，由於棋子減少，炮架難尋，價值會明顯下降。俗諺「殘棋炮歸象」，殘局階段炮適合退回九宮內找士 / 象作為炮架。</p>
+                <p data-lang="cannonMove"></p>
+                <p data-lang="cannonCapture"></p>
+                <p data-lang="cannonConcept"></p>
             </article>
 
             <article>
-                <h3>兵 / 卒</h3>
+                <h3 data-lang="soldierTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_p.png" alt="兵">
                     <img src="images/b_p.png" alt="卒">
                 </div>
-                <p><strong>走法：</strong>過河前，只能向前直走一格。過河後，可以前進、左行、或右行，但永遠不能後退。</p>
-                <p><strong>觀念：</strong>兵卒的價值在於「潛力」。未過河的兵主要起防守作用，一旦過河，威力劇增，能威脅對方大子。深入敵陣，能控制九宮將帥的兵卒其價值有時不亞於一馬或一炮。</p>
+                <p data-lang="soldierMove"></p>
+                <p data-lang="soldierConcept"></p>
             </article>
         </section>
 
         <section id="concepts">
-            <h2>基本觀念</h2>
-            <p><strong>將軍 (Check)：</strong>當你的一步棋，下一步可以吃掉對方的將/帥。</p>
-            <p><strong>將死 (Checkmate)：</strong>對方被「將軍」，且無法化解，即為將死，遊戲結束。</p>
-            <p><strong>困斃 (Stalemate)：</strong>輪到一方走棋，其將/帥沒有被將軍，但動任何一支棋子皆會暴露將帥，無子可動，則被困斃方判負。</p>
+            <h2 data-lang="conceptsTitle"></h2>
+            <p data-lang="checkConcept"></p>
+            <p data-lang="checkmateConcept"></p>
+            <p data-lang="stalemateConcept"></p>
         </section>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
