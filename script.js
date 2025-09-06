@@ -55,9 +55,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Detect initial language
     const getInitialLang = () => {
-        const userLang = navigator.language.split('-')[0];
+        const urlParams = new URLSearchParams(window.location.search);
+        const langFromUrl = urlParams.get('lang');
         const supportedLangs = ['zh', 'en', 'vi'];
-        return supportedLangs.includes(userLang) ? userLang : 'en';
+
+        if (langFromUrl && supportedLangs.includes(langFromUrl)) {
+            return langFromUrl;
+        }
+
+        const userLang = navigator.language.split('-')[0];
+        if (supportedLangs.includes(userLang)) {
+            return userLang;
+        }
+        
+        return 'en'; // Default fallback
     };
 
     loadLanguage(getInitialLang());
