@@ -36,11 +36,13 @@ body {
 
 .lang-dropdown-container {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .top-bar-title-container {
     flex: 1;
-    text-align: right;
+    text-align: left;
 }
 
 .top-bar h1 {
