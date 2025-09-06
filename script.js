@@ -1,16 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const langSelectorContainer = document.createElement('div');
-    langSelectorContainer.classList.add('lang-selector-container');
-    document.body.insertBefore(langSelectorContainer, document.body.firstChild);
+    const dropdownContainer = document.querySelector('.lang-dropdown-container');
+    if (!dropdownContainer) {
+        console.error('Language dropdown container not found!');
+        return;
+    }
 
-    const langSelector = document.createElement('div');
-    langSelector.classList.add('lang-selector');
-    langSelector.innerHTML = `
-        <button data-lang-switch="zh">繁體中文</button>
-        <button data-lang-switch="en">English</button>
-        <button data-lang-switch="vi">Tiếng Việt</button>
+    const langSelect = document.createElement('select');
+    langSelect.classList.add('lang-select');
+    langSelect.innerHTML = `
+        <option value="zh">繁體中文</option>
+        <option value="en">English</option>
+        <option value="vi">Tiếng Việt</option>
     `;
-    langSelectorContainer.appendChild(langSelector);
+    dropdownContainer.appendChild(langSelect);
 
     const translationsCache = {};
 
@@ -23,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const response = await fetch(`lang/${lang}.json`);
                 if (!response.ok) {
                     console.error(`Could not load ${lang}.json`);
-                    // Fallback to English if the language file is not found
                     if (lang !== 'en') loadLanguage('en');
                     return;
                 }
@@ -40,21 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
             document.title = translations.pageTitle || 'Chinese Chess Tutorial';
             document.documentElement.lang = lang;
 
-            // Update button states
-            document.querySelectorAll('[data-lang-switch]').forEach(btn => {
-                btn.classList.toggle('active', btn.getAttribute('data-lang-switch') === lang);
-            });
+            // Update dropdown selection
+            langSelect.value = lang;
 
         } catch (error) {
             console.error('Error loading language:', error);
         }
     };
 
-    langSelector.addEventListener('click', (e) => {
-        if (e.target.matches('[data-lang-switch]')) {
-            const lang = e.target.getAttribute('data-lang-switch');
-            loadLanguage(lang);
-        }
+    langSelect.addEventListener('change', (e) => {
+        loadLanguage(e.target.value);
     });
 
     // Detect initial language
