@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 25px;
+    padding: 10px 0; /* Vertical padding only */
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -38,11 +38,13 @@ body {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    padding-right: 25px; /* Add padding to the container */
 }
 
 .top-bar-title-container {
     flex: 1;
     text-align: left;
+    padding-left: 25px; /* Add padding to the container */
 }
 
 .top-bar h1 {
