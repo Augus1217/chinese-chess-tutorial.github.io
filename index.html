@@ -12,6 +12,21 @@
         <div class="top-bar-title-container">
             <h1 data-lang="headerTitle"></h1>
         </div>
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <button class="dropdown-btn" data-lang="tocPieces"></button>
+                <ul class="dropdown-content">
+                    <li><a href="#piece-general" data-lang="tocGeneral"></a></li>
+                    <li><a href="#piece-advisor" data-lang="tocAdvisor"></a></li>
+                    <li><a href="#piece-elephant" data-lang="tocElephant"></a></li>
+                    <li><a href="#piece-chariot" data-lang="tocChariot"></a></li>
+                    <li><a href="#piece-horse" data-lang="tocHorse"></a></li>
+                    <li><a href="#piece-cannon" data-lang="tocCannon"></a></li>
+                    <li><a href="#piece-soldier" data-lang="tocSoldier"></a></li>
+                </ul>
+            </div>
+            <a href="#concepts" class="nav-link" data-lang="tocConcepts"></a>
+        </nav>
         <div class="lang-dropdown-container"></div>
     </header>
 
@@ -21,7 +36,7 @@
         <section id="pieces">
             <h2 data-lang="piecesTitle"></h2>
 
-            <article>
+            <article id="piece-general">
                 <h3 data-lang="generalTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_k.png" alt="帥">
@@ -40,7 +55,7 @@
                 </div>
             </article>
 
-            <article>
+            <article id="piece-advisor">
                 <h3 data-lang="advisorTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_a.png" alt="仕">
@@ -58,18 +73,30 @@
                 </div>
             </article>
 
-            <article>
+            <article id="piece-elephant">
                 <h3 data-lang="elephantTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_b.png" alt="相">
                     <img src="images/b_b.png" alt="象">
                 </div>
                 <p data-lang="elephantMove"></p>
+                <div class="move-image-container">
+                    <img src="images/move/相1.png" alt="相/象走法" class="move-image">
+                    <p class="image-caption" data-lang="elephantMoveCaption"></p>
+                </div>
                 <p data-lang="elephantRule"></p>
+                <div class="move-image-container">
+                    <img src="images/move/相2.png" alt="塞象眼" class="move-image">
+                    <p class="image-caption" data-lang="elephantRuleCaption"></p>
+                </div>
                 <p data-lang="elephantConcept"></p>
+                <div class="move-image-container">
+                    <img src="images/move/相3.png" alt="相/象觀念" class="move-image">
+                    <p class="image-caption" data-lang="elephantConceptCaption"></p>
+                </div>
             </article>
 
-            <article>
+            <article id="piece-chariot">
                 <h3 data-lang="chariotTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_r.png" alt="俥">
@@ -79,7 +106,7 @@
                 <p data-lang="chariotConcept"></p>
             </article>
 
-            <article>
+            <article id="piece-horse">
                 <h3 data-lang="horseTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_n.png" alt="傌">
@@ -90,7 +117,7 @@
                 <p data-lang="horseConcept"></p>
             </article>
 
-            <article>
+            <article id="piece-cannon">
                 <h3 data-lang="cannonTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_c.png" alt="炮">
@@ -101,7 +128,7 @@
                 <p data-lang="cannonConcept"></p>
             </article>
 
-            <article>
+            <article id="piece-soldier">
                 <h3 data-lang="soldierTitle"></h3>
                 <div class="piece-images">
                     <img src="images/r_p.png" alt="兵">
