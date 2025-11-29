@@ -244,6 +244,11 @@ section {
     margin-bottom: 40px;
 }
 
+/* Fix anchor scrolling overlap */
+section[id], article[id] {
+    scroll-margin-top: 80px;
+}
+
 /* Card Design for Articles */
 article {
     background: var(--card-bg);
