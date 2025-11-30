@@ -46,7 +46,7 @@
     "soldierTitle": "Tốt (兵 / 卒)",
     "soldierMove": "<strong>Cách đi:</strong> Trước khi qua sông, nó chỉ có thể đi một ô về phía trước. Sau khi qua sông, nó có thể đi một ô về phía trước, sang trái hoặc sang phải, nhưng không bao giờ được đi lùi.",
     "soldierConcept": "<strong>Khái niệm:</strong> Giá trị của Tốt nằm ở tiềm năng của nó. Trước khi qua sông, nó có vai trò phòng thủ. Một khi đã qua sông, sức mạnh của nó tăng lên đáng kể. Một quân Tốt sâu trong lãnh thổ đối phương, kiểm soát cung điện, đôi khi có thể có giá trị như một quân cờ lớn.",
-    "conceptsTitle": "Các khái niệm cơ bản",
+    "conceptsTitle": "Quy tắc chơi",
     "boardSetupCaption": "Cách xếp quân ban đầu: Đỏ ở dưới, Đen ở trên.",
     "checkConcept": "<strong>Chiếu:</strong> Một nước đi đe dọa bắt Tướng của đối phương ở nước tiếp theo.",
     "checkmateConcept": "<strong>Chiếu hết:</strong> Tướng của đối phương đang bị chiếu và không có nước đi hợp lệ nào để thoát khỏi thế chiếu. Trò chơi kết thúc.",

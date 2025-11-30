@@ -46,7 +46,7 @@
     "soldierTitle": "兵 / 卒",
     "soldierMove": "<strong>走法：</strong>过河前，只能向前直走一格。过河后，可以前进、左行、或右行，但永远不能后退。",
     "soldierConcept": "<strong>观念：</strong>兵卒的价值在于“潜力”。未过河的兵主要起防守作用，一旦过河，威力剧增，能威胁对方大子。深入敌阵，能控制九宫将帅的兵卒其价值有时不亚于一马或一炮。",
-    "conceptsTitle": "基本观念",
+    "conceptsTitle": "游戏规则",
     "boardSetupCaption": "棋子初始摆法：红方在下，黑方在上。",
     "checkConcept": "<strong>将军 (Check)：</strong>当你的一步棋，下一步可以吃掉对方的将/帅。",
     "checkmateConcept": "<strong>将死 (Checkmate)：</strong>对方被“将军”，且无法化解，即为将死，游戏结束。",

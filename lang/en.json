@@ -46,7 +46,7 @@
     "soldierTitle": "Soldier (兵 / 卒)",
     "soldierMove": "<strong>Movement:</strong> Before crossing the river, it can only move one space forward. After crossing, it can move one space forward, left, or right, but never backward.",
     "soldierConcept": "<strong>Concept:</strong> The Soldier's value lies in its potential. Before the river, it serves a defensive role. Once across, its power increases dramatically. A soldier deep in enemy territory, controlling the palace, can sometimes be as valuable as a major piece.",
-    "conceptsTitle": "Basic Concepts",
+    "conceptsTitle": "Game Rules",
     "boardSetupCaption": "Initial Board Setup: Red at the bottom, Black at the top.",
     "checkConcept": "<strong>Check:</strong> A move that threatens to capture the enemy General on the next turn.",
     "checkmateConcept": "<strong>Checkmate:</strong> The enemy General is in check and there is no legal move to escape the check. The game ends.",
