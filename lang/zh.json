@@ -27,7 +27,7 @@
     "elephantMove": "<strong>走法：</strong>沿著「田」字對角線移動，一次走兩格，俗稱「飛相 / 象」。",
     "elephantMoveCaption": "相/象走田字，一次走兩格。",
     "elephantRule": "<strong>特殊規則：</strong>不能過河。如果「田」字中心有棋子（塞象眼），則不能往該方向移動。",
-    "elephantRuleCaption": "相/象不能過河。若田字中心有棋子（塞象眼），則無法移動。",
+    "elephantRuleCaption": "相/象不能過河。若田字中心有棋子（塞象眼），則無法移動至該處。",
     "elephantConcept": "<strong>觀念：</strong>核心的防守子力，與「仕」互相配合，鞏固防線。缺點是移動範圍受限且有「塞象眼」的弱點，容易被對方的兵卒或車炮針對。",
     "elephantConceptCaption": "相/象與仕/士組成防線，保護將帥，臨危不亂。",
     "chariotTitle": "俥 / 車",
