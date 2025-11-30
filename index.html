@@ -13,6 +13,7 @@
             <h1 data-lang="headerTitle"></h1>
         </div>
         <nav class="nav-menu">
+            <a href="#concepts" class="nav-link" data-lang="tocConcepts"></a>
             <div class="dropdown">
                 <button class="dropdown-btn" data-lang="tocPieces"></button>
                 <ul class="dropdown-content">
@@ -25,13 +26,23 @@
                     <li><a href="#piece-soldier" data-lang="tocSoldier"></a></li>
                 </ul>
             </div>
-            <a href="#concepts" class="nav-link" data-lang="tocConcepts"></a>
         </nav>
         <div class="lang-dropdown-container"></div>
     </header>
 
     <div class="container">
         <p data-lang="welcomeMessage"></p>
+
+        <section id="concepts">
+            <h2 data-lang="conceptsTitle"></h2>
+            <div class="move-image-container">
+                <img src="images/game_start.png" alt="Board Setup" class="move-image">
+                <p class="image-caption" data-lang="boardSetupCaption"></p>
+            </div>
+            <p data-lang="checkConcept"></p>
+            <p data-lang="checkmateConcept"></p>
+            <p data-lang="stalemateConcept"></p>
+        </section>
 
         <section id="pieces">
             <h2 data-lang="piecesTitle"></h2>
@@ -147,12 +158,6 @@
             </article>
         </section>
 
-        <section id="concepts">
-            <h2 data-lang="conceptsTitle"></h2>
-            <p data-lang="checkConcept"></p>
-            <p data-lang="checkmateConcept"></p>
-            <p data-lang="stalemateConcept"></p>
-        </section>
 
     </div>
     <script src="script.js"></script>

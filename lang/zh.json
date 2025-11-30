@@ -10,7 +10,7 @@
     "tocHorse": "傌/馬",
     "tocCannon": "炮/包",
     "tocSoldier": "兵/卒",
-    "tocConcepts": "基本觀念",
+    "tocConcepts": "遊戲規則",
     "piecesTitle": "棋子走法與吃法",
     "generalTitle": "帥 / 將",
     "generalMove": "<strong>走法：</strong>在「九宮」內移動，可以上下左右移動一格。",
@@ -47,6 +47,7 @@
     "soldierMove": "<strong>走法：</strong>過河前，只能向前直走一格。過河後，可以前進、左行、或右行，但永遠不能後退。",
     "soldierConcept": "<strong>觀念：</strong>兵卒的價值在於「潛力」。未過河的兵主要起防守作用，一旦過河，威力劇增，能威脅對方大子。深入敵陣，能控制九宮將帥的兵卒其價值有時不亞於一馬或一炮。",
     "conceptsTitle": "基本觀念",
+    "boardSetupCaption": "棋子初始擺法：紅方在下，黑方在上。",
     "checkConcept": "<strong>將軍 (Check)：</strong>當你的一步棋，下一步可以吃掉對方的將/帥。",
     "checkmateConcept": "<strong>將死 (Checkmate)：</strong>對方被「將軍」，且無法化解，即為將死，遊戲結束。",
     "stalemateConcept": "<strong>困斃 (Stalemate)：</strong>輪到一方走棋，其將/帥沒有被將軍，但動任何一支棋子皆會暴露將帥，無子可動，則被困斃方判負。"
