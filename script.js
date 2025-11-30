@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     langSelect.classList.add('lang-select');
     langSelect.innerHTML = `
         <option value="zh">繁體中文</option>
+        <option value="zh-cn">简体中文</option>
         <option value="en">English</option>
         <option value="vi">Tiếng Việt</option>
     `;
@@ -57,10 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const getInitialLang = () => {
         const urlParams = new URLSearchParams(window.location.search);
         const langFromUrl = urlParams.get('lang');
-        const supportedLangs = ['zh', 'en', 'vi'];
+        const supportedLangs = ['zh', 'en', 'vi', 'zh-cn'];
 
         if (langFromUrl && supportedLangs.includes(langFromUrl)) {
             return langFromUrl;
+        }
+
+        const userLangFull = navigator.language.toLowerCase();
+        if (supportedLangs.includes(userLangFull)) {
+            return userLangFull;
         }
 
         const userLang = navigator.language.split('-')[0];
